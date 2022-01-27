@@ -1,0 +1,217 @@
+// Bootstrap overrides
+//
+// Color system
+//
+
+$white: rgb(249, 248, 248);
+$black: rgb(12, 10, 10);
+
+$gray-100: #d9d9d6;
+$gray-200: #c8c9c7;
+$gray-300: #bbbcbc;
+$gray-400: #b1b3b3;
+$gray-500: #97999b;
+$gray-600: darken(#888b8d, 10%);
+$gray-700: darken(#75787b, 10%);
+$gray-800: darken(#63666a, 10%);
+$gray-900: darken(#53565a, 10%);
+
+$blue: #3e85a3;
+$indigo: #905e79;
+$purple: #8b74a6;
+$pink: #c28b9a;
+$red: #c26558;
+$orange: #d19e50;
+$yellow: #d4b58c;
+$green: #41a26d;
+$teal: #7cb0a9;
+$cyan: #a5dce0;
+$red-transparent: #dc35456b;
+$green-transparent: #28a74566;
+
+$primary: #e41f13;
+
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+);
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $gray-300,
+  success: $green,
+  info: $blue,
+  warning: $orange,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  gray-100: $gray-100,
+  gray-200: $gray-200,
+  gray-300: $gray-300,
+  gray-400: $gray-400,
+  gray-500: $gray-500,
+  gray-600: $gray-600,
+  gray-700: $gray-700,
+  gray-800: $gray-800,
+  gray-900: $gray-900
+);
+
+$dare: #1c1b44;
+$class_session: #8894a4;
+$blog: #0b9a52;
+$precoaching: #84bf8f;
+$excelence: #126f3a;
+$blog_negocios: #0b9a52;
+$precoaching_negocios: #84bf8f;
+$excelence_negocios: #126f3a;
+$blog_transform: #f26f3b;
+$precoaching_transform: #f9aa77;
+$excelence_transform: #bd2527;
+$workshop: #24aae1;
+$challenge: #feca0a;
+$evaluation: #c78510;
+$_360: #642d68;
+$coaching_session: #283890;
+$community_meeting: #1074bc;
+$observation: #606160;
+$clinic: #606160;
+$coach_credits: #606160;
+$action_plan: #a083a2;
+$lecture: #606160;
+//$poll:
+//$log:
+$construction: #a083a2;
+$impact: #84bf8f;
+$evaluation_workshop: #f9aa77;
+$evaluation_read: #f26f3b;
+$evaluation_ort: #bd2527;
+$purpose: #feca0a;
+$vino_dark: #160b01;
+$red_tb: #ee2a24;
+$white_clear: #ffffff;
+
+$tasks: (
+  primary: $primary,
+  dare: $dare,
+  class_session: $class_session,
+  blog: $blog,
+  precoaching: $precoaching,
+  excelence: $excelence,
+  blog_negocios: $blog_negocios,
+  precoaching_negocios: $precoaching_negocios,
+  excelence_negocios: $excelence_negocios,
+  blog_transform: $blog_transform,
+  precoaching_transform: $precoaching_transform,
+  excelence_transform: $excelence_negocios,
+  workshop: $workshop,
+  challenge: $challenge,
+  evaluation: $evaluation,
+  _360: $_360,
+  coaching_session: $coaching_session,
+  community_meeting: $community_meeting,
+  observation: $observation,
+  clinic: $clinic,
+  coach_credits: $coach_credits,
+  action_plan: $action_plan,
+  lecture: $lecture,
+  construction: $construction,
+  impact: $impact,
+  evaluation_workshop: $evaluation_workshop,
+  evaluation_read: $evaluation_read,
+  evaluation_ort: $evaluation_ort,
+  purpose: $purpose
+);
+
+@each $task, $color in $tasks {
+  .nav-#{$task} {
+    color: $color !important;
+  }
+}
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-transitions: true;
+$enable-rounded: false;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Titillium Web", sans-serif;
+$font-size-base: 0.9rem;
+$font-weight-bold: 600;
+
+$headings-font-family: "Titillium Web", sans-serif;
+$headings-font-weight: 800 !default;
+
+// Breadcrumbs
+
+$breadcrumb-bg: #fff;
+$breadcrumb-margin-bottom: 1.5rem;
+
+// Cards
+
+$card-border-color: $gray-200;
+$card-cap-bg: $gray-100;
+$card-bg: #f5f7fa;
+
+// Foating menu
+$floating-bg: #e4ebf2;
+
+// Dropdowns
+
+$dropdown-padding-y: 0;
+$dropdown-border-color: $gray-200;
+$dropdown-divider-bg: $gray-100;
+
+// Buttons
+
+$btn-secondary-border: $gray-300;
+
+// Progress bars
+
+$progress-bg: $gray-100;
+
+// Tables
+
+$table-bg-accent: $gray-100;
+$table-bg-hover: $gray-100;
+
+// Forms
+
+$input-group-addon-bg: $gray-100;
+$input-border-color: $gray-200;
+$input-group-addon-border-color: $gray-200;
+
+$border-radius: 1rem;
+$border-radius-lg: 1.35rem;
+$border-radius-sm: 0.9rem;
+$border-radius-xs: 0.5rem;
