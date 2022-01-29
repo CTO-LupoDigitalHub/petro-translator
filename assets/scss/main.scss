@@ -27,11 +27,69 @@
 .border-text-area {
   border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
-.er8xn {
+.txtEr8xn {
   border: 0px solid #ffffff !important;
   overflow-y: hidden !important;
+  padding: 1rem;
 }
-.er8xn:focus {
+.txtEr8xn:focus {
   border-color: transparent;
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 8px rgba(255, 255, 255, 0);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0),
+    0 0 8px rgba(255, 255, 255, 0);
+}
+
+// Button reset textarea
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 50%;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 14px;
+  top: 5px;
+  content: " ";
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 690px) {
+  .navbar {
+    display: none;
+  }
+  .nuxt-logo {
+    position: relative;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .bg-petro-logo {
+    height: 22vh;
+  }
+  .border-text-area > .list-group {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .sm-col{
+    flex-direction: column;
+  }
+  .close {
+    right: 20px;
+    top: 10px;
+}
 }
