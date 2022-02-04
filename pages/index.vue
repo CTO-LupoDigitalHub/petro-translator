@@ -1,21 +1,32 @@
 <template>
   <div>
     <petro-logo></petro-logo>
+    <message-modal></message-modal>
     <index-search
-      :search.sync="search"
-      :list="list"
-      @reset="reset"
+      :search.sync='search'
+      :list='list'
+      @reset='reset'
     ></index-search>
   </div>
 </template>
 
 <script>
-import PetroLogo from "../components/PetroLogo";
-import IndexSearch from "../components/IndexSearch";
-import elasticlunr from "elasticlunr";
+import PetroLogo from '../components/PetroLogo';
+import IndexSearch from '../components/IndexSearch';
+import MessageModal from '../components/MessageModal';
+// import elasticlunr from 'elasticlunr';
 import data from "assets/data/data";
+
+var elasticlunr = require('elasticlunr');
+require('@/assets/js/lunr.stemmer.support.js')(elasticlunr);
+require('@/assets/js/lunr.es.js')(elasticlunr);
+
 export default {
-  components: { PetroLogo, IndexSearch },
+  components: {
+    PetroLogo,
+    IndexSearch,
+    MessageModal
+  },
   name: "IndexPage",
   data() {
     return {
@@ -58,8 +69,10 @@ export default {
     },
     buildIndex() {
       const documents = this.original;
+
       this.searchIndex = elasticlunr(function () {
         this.setRef("name");
+        this.use(elasticlunr.es);
         this.addField("name");
         this.addField("description");
 
@@ -67,7 +80,7 @@ export default {
           this.addDoc(doc);
         });
       });
-    },
+    }
   },
 };
 </script>

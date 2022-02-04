@@ -8,8 +8,7 @@
     >
       <template #header>
         <h6 class="mb-0 py-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-          consectetur suscipit
+          TERMINA CON LOS RUMORES Y LAS MENTIRAS DE LOS ODIADORES.
         </h6>
       </template>
 
@@ -22,7 +21,7 @@
             @input="(value) => $emit('update:search', value)"
             class="txtEr8xn"
             id="textarea-auto-height"
-            placeholder="Escriba su busqueda aquí..."
+            placeholder="Escribe la palabra o frase que quieras consultar y el TERMINATOR DE LA DESINFORMACIÓN te dirá la verdad."
             rows="5"
             max-rows="15"
           ></b-form-textarea>
