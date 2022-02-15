@@ -7,10 +7,9 @@
       centered
       hide-footer
       size='lg'
-      title="¡HASTA LA VISTA MENTIRAS!">
+      title="DALE TRANSLATOR A LAS MENTIRAS">
         <div class="text-center">
-          Harvard estima que cada hora le inventan 1.5 noticias falsas a Petro.
-          <br>Verifica con Terminator lo que <strong>SÍ propone</strong> y lo <strong>Sí dice Petro.</strong>
+        Con el <strong>Petro-translator</strong> infórmate sobre lo que significa para Petro acuerdo de paz, exportación, democracia y muchas palabras más.
         </div>
     </b-modal>
   </div>
