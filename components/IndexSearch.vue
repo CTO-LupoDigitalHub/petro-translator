@@ -44,7 +44,14 @@
         </b-col>
       </b-row>
     </b-card>
+        <b-container mt-5>
+      <b-img
+      src="~/assets/image/footer-banner.png"
+      fluid
+      />
+    </b-container>
   </b-container>
+
 </template>
 
 <script>
